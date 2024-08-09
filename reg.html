@@ -1,0 +1,42 @@
+html>
+<body>
+<script>
+function validation(){
+var name=document.myform.password.value;
+var password=document.myform.eid.value;
+var phno=document.myform.phno.value;
+var addr=document.myform.addr.value;
+if(name==null||name==" "){
+alert("name is not blank");
+return false;
+}
+if(password.length<6){
+alert("password must be atleast 6 characters long");
+return false;
+}
+if(eid==null||name==" "){
+alert("email-id cannot be blank");
+return false;
+}
+if(phno==null||phno==" "){
+alert("phone number cannot be blank");
+return false;
+}
+if(addr==null||addr==" "){
+alert("address cannot be blank");
+return false;
+}
+}
+</script>
+<body bgcolor="#ffffff"><center><h1>registration form</h1>
+<form name="my form"method="post"onsubmit="return validateform()">
+name:<input type="text"name="name"><br><br>
+password:<input type="password"name="password"><br><br>
+email-id:<input type="text"name="eid"><br><br>
+phone number:<input type="number"name="phno"id=" "><br><br>
+adddress:<textarea name="addr"rows="5"cols="10"></textarea><br><br>
+<input type="submit"value="submit">
+<input type="reset"value="reset"></center>
+</form>
+</body>
+</html>
